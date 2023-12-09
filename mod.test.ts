@@ -24,8 +24,12 @@ const decodedToEncoded = {
 
 Deno.test('encode function', async (t) => {
 	for (const [decoded, encoded] of Object.entries(decodedToEncoded)) {
-		await t.step(`encode ${decoded}`, async () => {
+		await t.step(`encode "${decoded}" from string`, async () => {
 			assertEquals(await encode(decoded), encoded);
+		});
+
+		await t.step(`encode "${decoded}" from ByteArray`, async () => {
+			assertEquals(await encode(new TextEncoder().encode(decoded)), encoded);
 		});
 	}
 });
