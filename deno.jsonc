@@ -1,12 +1,13 @@
 {
-	"fmt": {
-		"lineWidth": 120,
-		"singleQuote": true,
-		"indentWidth": 2,
-		"useTabs": true
-	},
-	"tasks": {
-		"deps:reload": "deno cache --reload mod.ts"
-	},
-	"lock": "./deno.lock"
+  "fmt": {
+    "lineWidth": 120,
+    "singleQuote": true,
+    "indentWidth": 2,
+    "useTabs": true,
+    "include": ["*.ts"]
+  },
+  "tasks": {
+    "deps:reload": "deno cache --reload mod.ts"
+  },
+  "lock": "./deno.lock"
 }
