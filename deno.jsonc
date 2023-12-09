@@ -4,7 +4,7 @@
     "singleQuote": true,
     "indentWidth": 2,
     "useTabs": true,
-    "include": ["src/*.ts"]
+    "include": ["*.ts"]
   },
   "tasks": {
     "deps:reload": "deno cache --reload mod.ts"
