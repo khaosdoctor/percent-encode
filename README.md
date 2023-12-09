@@ -4,6 +4,8 @@
 
 This implementation is following Twitter's spec from [RFC3986](https://datatracker.ietf.org/doc/html/rfc3986#section-2.1).
 
+**Disclaimer**: This module is made to work with Deno alone, it won't work in Node environments.
+
 ## Install
 
 ```ts
